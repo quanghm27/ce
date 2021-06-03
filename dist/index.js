@@ -163,7 +163,6 @@ if (! jSuites && typeof(require) === 'function') {
             tableHeight:'300px',
             tableWidth:null,
             textOverflow:false,
-            tableRelativeWidth:null,
             // Meta
             meta: null,
             // Style
@@ -623,9 +622,6 @@ if (! jSuites && typeof(require) === 'function') {
 
             if (! obj.options.textOverflow) {
                 obj.table.classList.add('jexcel_overflow');
-            }
-            if (obj.options.tableRelativeWidth) {
-                obj.table.style.width = obj.options.tableRelativeWidth + '%'
             }
 
             // Spreadsheet corner
